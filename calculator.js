@@ -18,6 +18,8 @@ function divide(inputNumber1, inputNumber2) {
 };
 
 
+
+
 let inputNumber1 = ''
 let inputNumber2 = ''
 let operator = ''
@@ -25,23 +27,25 @@ let operator = ''
 function operate(operator, inputNumber1, inputNumber2) {
     switch (operator) {
         case '+':
-            add(inputNumber1, inputNumber2);
-            break;
+            return add(inputNumber1, inputNumber2);
+            
         case '-':
-            subtract(inputNumber1, inputNumber2);
-            break;
-        case '*':
-            multiply(inputNumber1, inputNumber2);
-            break;
+            return subtract(inputNumber1, inputNumber2);
+            
+        case 'x':
+            return multiply(inputNumber1, inputNumber2);
+            
         case '/':
-            divide(inputNumber1, inputNumber2);
-            break;
+            return divide(inputNumber1, inputNumber2);
+            
     }
 }
 
-add = add(10,2);
-subtract = subtract(10,2);
-multiply = multiply(10,2);
-divide = divide(2, 5);
+//add = add(10,2);
+//subtract = subtract(10,2);
+//multiply = multiply(10,2);
+//divide = divide(2, 5);
+//operate = operate('/', 400,2);
 
-console.log(add, subtract, multiply, divide)
+//console.log(add, subtract, multiply, divide);
+//console.log(operate);
