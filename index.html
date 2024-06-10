@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="calculator.js"></script>
+    <script src="calculator.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -24,15 +24,20 @@
         <div class="operators-container">
             <button class="plus">+</button>
             <button class="minus">-</button>
-            <button class="multiply">x</button>
+            <button class="multiply">*</button>
             <button class="divide">/</button>
+        </div>
+        <div class="equals-container">
             <button class="equals">=</button>
         </div>
-        <div class="clear">
+        <div class="clear-container">
             <button class="Clear">C</button>
         </div>
         <div class="display">
-            <p>8005</p>
+            <p class="display-input-1"></p>
+            <p class="display-input-operator"></p>
+            <p class="display-input-2"></p>
+            <p class="display-output"></p>
         </div>
     </div>
 </body>
